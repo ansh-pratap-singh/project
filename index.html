@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Battle Bound: The Rise of Darkness</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="game-container">
+    <!-- Title Screen -->
+    <div id="title-screen" class="screen active">
+      <h1>Battle Bound: The Rise of Darkness</h1>
+      <p>The land is engulfed in darkness. Will you rise as the hero?</p>
+      <button id="start-button">Start Battle</button>
+    </div>
+
+    <!-- Battle Screen -->
+    <div id="battle-screen" class="screen hidden">
+      <div class="stats">
+        <div class="hero-stats">
+          <h2>Your Health: <span id="hero-health">100</span></h2>
+        </div>
+        <div class="enemy-stats">
+          <h2>Enemy Health: <span id="enemy-health">100</span></h2>
+        </div>
+      </div>
+      <div class="battlefield">
+        <div class="hero">
+          <img src="hero.png" alt="Hero" class="character-image">
+          <button id="attack-button" class="action-button">Attack</button>
+        </div>
+        <div class="enemy">
+          <img src="enemy.png" alt="Enemy" class="character-image">
+        </div>
+      </div>
+    </div>
+
+    <!-- Game Over Screen -->
+    <div id="game-over-screen" class="screen hidden">
+      <h1 id="game-over-message"></h1>
+      <button id="restart-button">Restart Game</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

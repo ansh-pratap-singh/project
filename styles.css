@@ -1,0 +1,90 @@
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #000000, #2b2b2b);
+    color: white;
+    text-align: center;
+  }
+  
+  h1, h2 {
+    margin: 10px 0;
+  }
+  
+  .game-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .screen {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .screen.active {
+    display: flex;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 1em;
+    background: #FF4500;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: #ff6347;
+  }
+  
+  /* Battlefield */
+  .battlefield {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+  }
+  
+  .character-image {
+    width: 150px;
+    height: auto;
+  }
+  
+  .stats {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .action-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #FF4500;
+    border: none;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  
+  .action-button:hover {
+    background-color: #FF6347;
+  }
+  
+  /* Game Over Screen */
+  #game-over-message {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
